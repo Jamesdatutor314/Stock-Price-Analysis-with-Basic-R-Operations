@@ -28,7 +28,9 @@ The analysis includes:
 stock.price <- c(23, 27, 23, 21, 34)
 
 # Assign day names to stock prices
-`week.days <- c("Mon", "Tue", "Wed", "Thr", "Fri")
+```
+week.days <- c("Mon", "Tue", "Wed", "Thr", "Fri")
 names(stock.price) <- week.days
 
-print(stock.price)`
+print(stock.price)
+```
