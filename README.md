@@ -31,5 +31,4 @@ stock.price <- c(23, 27, 23, 21, 34)
 `week.days <- c("Mon", "Tue", "Wed", "Thr", "Fri")
 names(stock.price) <- week.days
 
-print(stock.price)
-`
+print(stock.price)`
