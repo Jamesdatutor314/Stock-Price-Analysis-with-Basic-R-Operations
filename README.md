@@ -21,3 +21,15 @@ The analysis includes:
 - Filtered days where stock prices exceeded $23.
 - Identified days with below-average stock prices.
 6. **Visualization**: Created a bar plot using ggplot2 to visualize stock price trends over the week.
+
+# Code Highlights
+## 1. Create Stock Prices Vector
+`# Create a vector of stock prices
+stock.price <- c(23, 27, 23, 21, 34)
+
+# Assign day names to stock prices
+week.days <- c("Mon", "Tue", "Wed", "Thr", "Fri")
+names(stock.price) <- week.days
+
+print(stock.price)
+`
