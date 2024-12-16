@@ -67,3 +67,15 @@ barchart
 2. **Highest Stock Price**: The highest stock price occurred on Friday with a value of $34.
 3. **Short Stock Prices (< $23)**: Stock prices fell below the average on Monday, Wednesday, and Thursday.
 4. **Stock Price Visualization**: The bar plot clearly highlights trends in stock prices across the week.
+
+# Visualization
+## Bar Plot: Stock Prices Over the Week
+
+# Tools Used
+- **R Programming Language**: Data analysis and manipulation.
+- **ggplot2**: Data visualization for stock price trends.
+
+# Future Improvements
+- Add real-world stock data from APIs like Alpha Vantage or Yahoo Finance.
+- Compare weekly trends across multiple weeks or years.
+- Implement time series analysis for stock price forecasting.
