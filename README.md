@@ -70,6 +70,7 @@ barchart
 
 # Visualization
 ## Bar Plot: Stock Prices Over the Week
+![Screenshot Description](bargraph11.png)
 
 # Tools Used
 - **R Programming Language**: Data analysis and manipulation.
