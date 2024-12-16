@@ -34,3 +34,36 @@ names(stock.price) <- week.days
 
 print(stock.price)
 ```
+## 2. Logical Filtering for Prices > $23
+```
+# Find days where stock prices exceed $23
+over.23 <- stock.price > 23
+print(stock.price[over.23])
+```
+## 3. Find the Day with the Highest Stock Price
+```
+# Identify the day with the maximum stock price
+max_price <- stock.price[stock.price == max(stock.price)]
+print(max_price)
+```
+## 4. Visualize Stock Prices Using ggplot2
+```
+# Create a bar plot for stock prices
+library(ggplot2)
+
+df <- data.frame(days = names(stock.price), price = stock.price)
+df$days <- factor(df$days, levels = c("Mon", "Tue", "Wed", "Thr", "Fri"))
+
+barchart <- ggplot(df, aes(x = days, y = price, fill = days)) +
+    geom_bar(stat = "identity") +
+    theme_minimal() +
+    labs(x = "Day Of Week", y = "Stock Price", title = "Stock Prices Over The Week")
+
+barchart
+```
+
+# Key Findings
+1. **Average Stock Price**: The average stock price for the week is 25.6.
+2. **Highest Stock Price**: The highest stock price occurred on Friday with a value of $34.
+3. **Short Stock Prices (< $23)**: Stock prices fell below the average on Monday, Wednesday, and Thursday.
+4. **Stock Price Visualization**: The bar plot clearly highlights trends in stock prices across the week.
